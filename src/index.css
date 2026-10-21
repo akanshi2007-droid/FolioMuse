@@ -1,0 +1,49 @@
+@import '@fontsource/bagel-fat-one/latin-400.css';
+@import '@fontsource/dm-sans/latin-400.css';
+@import '@fontsource/dm-sans/latin-500.css';
+@import '@fontsource/dm-sans/latin-700.css';
+@import '@fontsource/silkscreen/latin-400.css';
+@import '@fontsource/silkscreen/latin-700.css';
+@import '@fontsource/jetbrains-mono/latin-400.css';
+@import '@fontsource/jetbrains-mono/latin-700.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; }
+body { @apply bg-ink font-body text-cream antialiased; margin: 0; overflow-x: hidden; }
+::selection { background: #ff6fa8; color: #1c1920; }
+:focus-visible { outline: 3px solid #ffc93c; outline-offset: 2px; }
+
+@layer components {
+  /* ---- retro window chrome (from the LANDSCAPE.EXE inspo) ---- */
+  .win { @apply bg-retro border-[3px] border-retro rounded-xl overflow-hidden; box-shadow: 6px 6px 0 rgba(0,0,0,.35); }
+  .win-bar { @apply flex items-center justify-between px-3 py-2 font-pixel text-[12px] tracking-widest text-cream uppercase; }
+  .win-body { @apply bg-cream text-ink; }
+  .win-x { @apply grid h-6 w-6 place-items-center rounded-md bg-pop-red text-cream; }
+  .pxbtn { @apply font-pixel uppercase tracking-wider border-2 border-ink bg-cream2 text-ink px-3 py-1.5 text-[11px] transition active:translate-y-[2px]; box-shadow: 0 3px 0 #1c1920; }
+  .pxbtn:hover { @apply bg-white; }
+  .pxbtn:active { box-shadow: 0 1px 0 #1c1920; }
+  .pill-cta { @apply inline-flex items-center gap-2 rounded-full border-[3px] border-ink bg-cream px-7 py-3 font-display text-xl text-ink transition hover:-translate-y-0.5 active:translate-y-0.5; box-shadow: 4px 4px 0 #1c1920; }
+  .pill-cta:hover { box-shadow: 6px 6px 0 #1c1920; }
+  .pill-cta:active { box-shadow: 2px 2px 0 #1c1920; }
+  .field { @apply w-full rounded-lg border-2 border-ink bg-white px-3 py-2 text-[15px] text-ink placeholder:text-ink/40 outline-none transition focus:bg-[#fffbe8]; }
+  .field:focus { box-shadow: 3px 3px 0 #ff6fa8; }
+  .field-err { @apply border-pop-red; }
+  .label { @apply mb-1 block font-pixel text-[10px] uppercase tracking-widest text-ink/70; }
+  .dotgrid { background-image: radial-gradient(rgba(243,236,221,.13) 1.4px, transparent 1.4px); background-size: 26px 26px; }
+  .pixelated { image-rendering: pixelated; }
+}
+
+.crt::after { content: ''; position: absolute; inset: 0; pointer-events: none; background: repeating-linear-gradient(transparent 0 2px, rgba(0,0,0,.08) 2px 3px); }
+.ink-scroll::-webkit-scrollbar { width: 12px; }
+.ink-scroll::-webkit-scrollbar-track { background: #e9dfca; border-left: 2px solid #1c1920; }
+.ink-scroll::-webkit-scrollbar-thumb { background: #1d3fae; border: 2px solid #1c1920; }
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: .001ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; }
+}
+@keyframes ribbon { to { stroke-dashoffset: 0; } }
+@keyframes rise { from { transform: translateY(24px); opacity: 0; } to { transform: none; opacity: 1; } }
+.rise { animation: rise .7s cubic-bezier(.2,.8,.2,1) both; }
