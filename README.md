@@ -1,56 +1,79 @@
-# FolioMuse — Your story, your style, your portfolio
+# ✦ FolioMuse
 
-A web app where you type in your details, pick one of **5 templates**, customise the look, preview it live on
-desktop / tablet / mobile, and **download a finished portfolio website as a ZIP** (`index.html`, `styles.css`,
-`assets/`, `README.txt`). No backend, no login, no paid API. Team 2 · Aakanksha Singh & Stuti Verma · SRM Insider.
+### **Your story. Your style. Your portfolio.**
+FolioMuse is a **browser-based portfolio generator** that lets you enter your details, choose from **5 unique templates**, customise the design, preview it live across devices, and export a complete portfolio website as a ZIP.
+**No backend. No login. No paid APIs.**
 
-## Run it (Windows PowerShell)
+---
+<img width="1892" height="912" alt="image" src="https://github.com/user-attachments/assets/c23391eb-b8c1-446e-a0af-f64bde74fb33" />
+<img width="1917" height="917" alt="image" src="https://github.com/user-attachments/assets/daa44325-8733-4203-96c8-6677657111b0" />
 
+Deployed link- https://foliomuse-five.vercel.app/
+
+## ✦ Features
+- 🎨 **5 Templates** — Noir, Volt, Paper, Terminal & Pop
+- ✏️ **Customisation** — colours, fonts & layout density
+- 📱 **Live Preview** — Desktop, Tablet & Mobile
+- 📁 **Dynamic Projects** — add/remove projects & screenshots
+- 🖼️ **Image Uploads** — profile & project images
+- 💾 **Auto-Save** — drafts stored in LocalStorage
+- 📦 **ZIP Export** — ready-to-use HTML, CSS & assets
+- 🔊 **Interactive SFX** — Web Audio API, no audio files
+- ✅ **Validation & Completeness Meter**
+
+
+## ✦ How It Works
+```text
+Form → Profile Object → renderPortfolio()
+                         ↙          ↘
+                  Live Preview    ZIP Export
+```
+
+The same renderer powers both the preview and exported website, keeping them consistent.
+
+---
+
+## ✦ Tech Stack
+
+**React · Vite · JavaScript · CSS · JSZip · Web Audio API · LocalStorage**
+
+---
+
+## ✦ Run Locally
 ```powershell
 npm install
 npm run dev
 ```
 
-Open the link it prints (usually http://localhost:5173). To make a production build: `npm run build`, then `npm run preview`.
-Needs Node 18+.
+Open `http://localhost:5173`
 
-## What's inside
+For production:
 
-| Feature | Where |
-|---|---|
-| Retro LOADING → START intro, rainbow hero, winding scroll road, template gallery, pixel finale | `src/components/landing/` |
-| Studio: Details / Skills / Projects / Links / Style tabs, live preview, device toggle | `src/components/studio/` |
-| 5 templates: **Noir, Volt, Paper, Terminal, Pop** | `src/lib/templates/` |
-| One renderer used by BOTH the preview and the ZIP (so they always match) | `src/lib/render.js` |
-| ZIP export with JSZip | `src/lib/exportZip.js` |
-| Validation, completeness meter (visible rules, no AI), LocalStorage drafts, image resize | `src/lib/` |
-| Sound effects (synthesised with Web Audio, no audio files) | `src/audio/sound.js` |
+```powershell
+npm run build
+npm run preview
+```
 
-## Sound effects
+**Requires Node.js 18+.**
 
-Click **START** on the intro to unlock audio. Hover and click blips, typing ticks, "step" jingles on the road,
-a fanfare on export. Toggle with the **SFX ON/OFF** button (saved in LocalStorage). To change which sound a button
-plays, add `data-sfx="select | toggle | pop | remove | coin | whoosh | none"` to it.
+---
 
-## Data flow (one-way)
+## ✦ Export Structure
 
-`form → one shared profile object → renderPortfolio() → live preview (iframe) AND ZIP exporter`
+```text
+portfolio.zip
+├── index.html
+├── styles.css
+├── assets/
+└── README.txt
+```
 
-## Manual test checklist
+Unzip → open `index.html` → your portfolio is ready.
 
-- [ ] Intro loads, START plays a jingle, SFX toggle mutes everything
-- [ ] Studio: empty name shows a friendly error and blocks export
-- [ ] Fill sample → completeness jumps; tips explain what's missing
-- [ ] Switch all 5 templates; your data stays
-- [ ] Accent, palette, font pairing, density all change the preview
-- [ ] Upload a photo + project screenshot; they appear in preview and in `assets/`
-- [ ] Refresh the page: draft is still there (LocalStorage)
-- [ ] Reset asks for confirmation
-- [ ] Export ZIP → unzip → double-click `index.html` works without a server; resize window to check responsive
-- [ ] Preview on Desktop / Tablet / Mobile buttons
+---
 
-## Notes
+## ✦ Future Scope
 
-- Fonts in the exported site load from Google Fonts (needs internet; falls back to system fonts offline).
-- Drafts with large images can exceed the browser's LocalStorage limit; the app shows a warning instead of crashing.
-- Future scope (planned, not built): GitHub import, public links, accounts and cloud drafts, more templates, PDF/Word export.
+GitHub import · Public portfolio links · Cloud drafts · More templates · PDF/Word export
+
+### **Your story. Your style. Your portfolio.**
