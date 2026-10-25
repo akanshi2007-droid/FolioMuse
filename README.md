@@ -1,4 +1,4 @@
-# ✦ FolioMuse
+# ✦ FolioMuse 
 
 ### **Your story. Your style. Your portfolio.**
 FolioMuse is a **browser-based portfolio generator** that lets you enter your details, choose from **5 unique templates**, customise the design, preview it live across devices, and export a complete portfolio website as a ZIP.
@@ -7,7 +7,6 @@ FolioMuse is a **browser-based portfolio generator** that lets you enter your de
 ---
 <img width="1892" height="912" alt="image" src="https://github.com/user-attachments/assets/c23391eb-b8c1-446e-a0af-f64bde74fb33" />
 <img width="1917" height="917" alt="image" src="https://github.com/user-attachments/assets/daa44325-8733-4203-96c8-6677657111b0" />
-
 Deployed link- https://foliomuse-five.vercel.app/
 
 ## ✦ Features
