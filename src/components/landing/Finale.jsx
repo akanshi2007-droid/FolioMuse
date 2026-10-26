@@ -44,7 +44,7 @@ export default function Finale({ onStart }) {
 
       <footer className="mx-auto mt-24 flex max-w-5xl flex-col items-center justify-between gap-4 border-t-2 border-cream/15 pt-8 text-sm text-cream/60 md:flex-row">
         <div className="flex items-center gap-3"><Folio size={34} /><span className="font-display text-xl text-cream">FolioMuse</span></div>
-        <p>Made by Team 2 · Aakanksha Singh &amp; Stuti Verma · SRM Insider</p>
+        <p>Aakanksha Singh &amp; Stuti Verma </p>
         <p className="font-pixel text-[10px] uppercase tracking-widest">your story · your style · your portfolio</p>
       </footer>
     </section>

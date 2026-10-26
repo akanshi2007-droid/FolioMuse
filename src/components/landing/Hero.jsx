@@ -23,7 +23,7 @@ export default function Hero({ onStart }) {
 
       <div className="relative mx-auto max-w-5xl px-5">
         <p className="rise mx-auto mb-5 inline-block rotate-[-2deg] rounded-full border-[3px] border-cream bg-pop-purple px-4 py-1 font-pixel text-[11px] uppercase tracking-widest text-cream">
-          portfolio generator · team 2
+          portfolio generator ·
         </p>
         <h1 className="rise font-display leading-[.9] text-cream" style={{ fontSize: 'clamp(64px, 14vw, 190px)', animationDelay: '.1s' }}>
           Your story,
