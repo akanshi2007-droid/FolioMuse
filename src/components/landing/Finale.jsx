@@ -9,7 +9,7 @@ export default function Finale({ onStart }) {
   return (
     <section className="dotgrid relative overflow-hidden bg-ink px-5 py-24 text-cream">
       <div className="mx-auto max-w-3xl text-center">
-        <p className="font-pixel text-xs uppercase tracking-[.3em] text-pop-yellow">04 · ready player one?</p>
+        <p className="font-pixel text-xs uppercase tracking-[.3em] text-pop-yellow"> ready player one?</p>
         <h2 className="mt-3 font-display text-5xl leading-none md:text-7xl">Your work deserves a better introduction.</h2>
       </div>
 

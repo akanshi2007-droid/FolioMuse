@@ -17,7 +17,7 @@ export default function Gallery({ onPick }) {
   return (
     <section id="templates" className="bg-cream px-5 py-24 text-ink">
       <div className="mx-auto max-w-6xl">
-        <p className="text-center font-pixel text-xs uppercase tracking-[.3em] text-retro">03 · templates</p>
+        <p className="text-center font-pixel text-xs uppercase tracking-[.3em] text-retro">templates</p>
         <h2 className="mx-auto mt-3 max-w-3xl text-center font-display text-4xl leading-tight md:text-6xl">
           Five real layouts. Not one layout in five colours.
         </h2>

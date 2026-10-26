@@ -64,7 +64,7 @@ export default function RoadMap() {
   return (
     <section id="how" className="dotgrid relative bg-ink px-5 py-24 text-cream">
       <div className="mx-auto max-w-5xl">
-        <p className="text-center font-pixel text-xs uppercase tracking-[.3em] text-pop-yellow">02 · the solution</p>
+        <p className="text-center font-pixel text-xs uppercase tracking-[.3em] text-pop-yellow">the solution</p>
         <h2 className="mx-auto mt-3 max-w-3xl text-center font-display text-4xl leading-tight md:text-6xl">
           One profile. Five steps. A finished site.
         </h2>

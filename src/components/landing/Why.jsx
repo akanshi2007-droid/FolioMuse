@@ -12,7 +12,7 @@ export default function Why() {
   return (
     <section className="bg-cream px-5 pb-24 pt-10 text-ink">
       <div className="mx-auto max-w-6xl">
-        <p className="text-center font-pixel text-xs uppercase tracking-[.3em] text-retro">01 · the problem</p>
+        <p className="text-center font-pixel text-xs uppercase tracking-[.3em] text-retro">the problem</p>
         <h2 className="mx-auto mt-3 max-w-3xl text-center font-display text-4xl leading-tight md:text-6xl">
           Making a portfolio shouldn't feel like a boss fight.
         </h2>
